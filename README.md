@@ -17,9 +17,9 @@ VDOcontainer
 		 {'icon':'fa fa-heart', 'link': 'https://code.jquery.com/jquery-2.2.4.min.js'}
 		]
 	  var options = {						
-					 icons: icons,
-					 target: '_blank'
-					};		
+		 icons: icons,
+		 target: '_blank'
+		 };		
 	  $(".ml-vdo").mlVDO(options);
 	});	
 </script>

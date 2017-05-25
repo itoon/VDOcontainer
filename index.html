@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>VDO container Hello Vedio</title>
+	<style>
+		html,body{
+			padding: 0;
+			margin: 0;
+			font-family: 'Kanit', sans-serif;
+		}				
+	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="vdo-container/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+</head>
+<body>
+	<div class="ml-vdo" data-title="Hello ML VDO" data-desc="Lorem ipsum dolor sit amet" data-user-image="vdo-container/user_male2.png">		
+		<video autobuffer autoloop loop controls width="600">
+			<source src="vdo-container/vdo.mp4" type="video/mp4">
+			<source src="vdo-container/vdo.ogg" type="video/ogg">
+		</video>
+	</div>	
+</body>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="vdo-container/script.js"></script>
+<script>
+	$(document).ready(function(){
+		var icons = [
+						{'icon':'fa fa-heart-o', 'link': 'https://code.jquery.com/jquery-2.2.4.min.js'},
+						{'icon':'fa fa-heart', 'link': 'https://code.jquery.com/jquery-2.2.4.min.js'}
+					]
+		var options = {						
+						icons: icons,
+						target: '_blank'
+					};		
+		$(".ml-vdo").mlVDO(options);
+	});	
+</script>
+</html>

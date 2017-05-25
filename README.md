@@ -6,8 +6,8 @@ VDOcontainer
 - font-awesome
 
 #### file:
-style.css
-script.js
+- style.css
+- script.js
 
 ```javascript
 <script>
@@ -23,6 +23,6 @@ script.js
 		$(".ml-vdo").mlVDO(options);
 	});	
 </script>
-```
 
+```
 ![ScreenShot](https://raw.github.com/itoon/VDOcontainer/master/vdo-container/ss.png)
